@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        h1 {
+            /* A very intersting thing is that I can convert a block-level element, by default, to inline-level element and vice versa. Take a look: */
+            /*
+            display: inline; 
+            I'm not going to use it, because it will lose its height and width, once inline-level elements does not have it, but if you're in need, you can force, as I showed, a display to be converted from block-level to inline-level */
+
+            background-color: lightgray;
+            height: 150px;
+            width: 150px;
+            /* I learn border, padding, margin and outline in a define order because it can be used in a shorthand for each case */
+
+            /* Let's do a shorthand for it
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+
+            border: 10px solid darkslategray;
+            /* Let's do a shorthand for it
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            /* That's the shorthand. But it can be even simpler if all the references (top, right, bottom and left) are equal, let's do it)
+            padding: 10px 50px 10px 10px;
+            */
+
+            padding: 10px;
+            
+            /* Let's do a shorthand for it */
+            /* margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin: auto;  Allows to center the box in the navigator display according to its width x height. */
+            /* But here we can also make some modifications if we need. That a look in this:
+            margin: 10px 10px 30px 10px;
+            Now watch what I'm going to make it looks: */
+            margin: 10px auto 10px auto; /* Once I called "auto" for right and left margin, the box will be centralized in the defined 10px for top and bottom margin */
+            
+            /* Let's do a shorthand for it */
+            /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /* Outline is a dashed inside the margin, but it can extrapolate it to outside (never to inside, which means it does not went trough the border). */
+
+            outline: 5px dashed salmon;
+
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-level example</h1>
+    <p>Paragraphs are also box-level, but <a href="#">links are inline-level.</a> Let's see how all of that works.</p>
+<!-- Basically, open dev tools from Google Chrome (right click with mousepad than choose "inspection (inspecionar)". If you're not already in the page "elements", change to it. There you can actively change the page layout and see how it works "padding", "margin", "height", "width", "outline" (not worked here), etc. Also, we so what is a box-level tag and a inline-level tag. It's very awesome. Dev tools is really a hand.-->
+</body>
+</html>

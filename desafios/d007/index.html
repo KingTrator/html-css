@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 007</title>
+</head>
+<body>
+    <h1>Rendered image</h1>
+    <p>This picture is automatically rendered, based on the height x length of the site's exibition</p>
+    <picture>
+        <source media="(max-width: 300px)" srcset="images/image-p.jpg" type="image/jpg">
+        <source media="(min-width: 301px) and (max-width: 500px)" srcset="images/image-m.jpg" type="image/jpg">
+        <img src="images/image-g.jpg" alt="Flexile nature image">
+    </picture>
+    
+</body>
+</html>

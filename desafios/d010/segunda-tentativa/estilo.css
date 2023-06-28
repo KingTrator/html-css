@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Personalizada";
+    src: url(fonte/idroid.otf);
+}
+
+/* Definindo a paleta de cores:
+Cores para o degradê:
+cor01 = #0D0221
+cor02 = #0F084B
+cor03 = #26408B
+
+Cor para os títulos:
+cor03 = #26408B
+
+Cor para tela de fundo:
+cor0 = #56e39f
+
+Cor para o background de aside:
+cor04 = #ef6f6c
+*/
+
+* {
+    margin: 0;
+}
+
+:root {
+    --cor01: #0D0221;
+    --cor02: #0F084B;
+    --cor03: #26408B;
+    --cor04: #ef6f6c;
+    --cor05: #56e39f;
+}
+
+body {
+    background-color: #91898948;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02), var(--cor03));
+    padding-bottom: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.479);
+}
+
+header > h1 {
+    padding-top: 5px;
+    color: white;
+    text-align: center;
+    font-family: "Personalizada", "sans-serif";
+}
+
+header > p {
+    color: rgba(255, 255, 255, 0.507);
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    margin-left: 9px;
+
+}
+
+header > nav > a:hover {
+    background-color: #26638b;
+    text-decoration: und;
+}
+
+main {
+    background-color: white;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 3px -3px 12px rgba(0, 0, 0, 0.363);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+article > p {
+    margin-left: 9px;
+    margin-right: 9px;
+    text-indent: 18px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+article > h1, h2 {
+    margin-left: 9px;
+    padding-left: 9px;
+    font-family: "Personalizada";
+    background-image: linear-gradient(to right, #26638b, rgba(38, 99, 139, 0));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #ef6f6c, #56e39f); /* Gradiente de plano de fundo */
+}
+
+
+.imagens-width-da-margin {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+img#bugdroid {
+    display: block;
+    margin: auto;
+}
+
+div#div-video {
+    background-color: rgb(27, 26, 26);
+    padding-bottom: 55%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+div#div-video > iframe {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+aside {
+    line-height: 1.5em;
+    text-indent: 18px;
+    margin-left: 9px;
+    margin-bottom: 10px;
+     text-align: center; 
+    background-color: #56e37ea8;
+    margin-right: 9px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 8px;
+}
+
+aside > ul {
+    columns: 2;
+}
+
+aside > h2 {
+    color: black;
+    background-image: none;
+    font-family: "Personalizada";
+}
+
+aside > ul > li {
+    color: rgb(0, 0, 0);
+    list-style-position: inside;
+    list-style-type: none;
+    content: "✓";
+}
+
+aside > ul > li::before {
+    content: "\2713";
+}
+
+aside > ul > li > abbr {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #0D0221;
+    color: rgba(255, 255, 255, 0.377);
+    text-align: center;
+}

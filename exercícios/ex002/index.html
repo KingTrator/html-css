@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos</title>
+</head>
+<body>
+    <h1>Parágrafos e quebras de linha</h1>
+    <hr>
+    <p>     Você pode escrever um parágrafo de qualquer jeito,
+        quer dizer, embora no arquivo original
+        este estejo esteja dividido em várias linhas,
+        aqui tudo está em uma, porque está entre as tags p.
+    </p>
+    <p>     Caso queira quebrar o texto em um ponto específico, como este <br>
+    basta usar a tag "br", entre os colchetes angulares/sinais de maior e menor</p>
+    <p>     Claro, talvez você queira saber como exibir as tags na página sem que o interpretador trate-as como tags. <br>
+        Sim! Há como. Você usa três caracteres especiais para isto, e comercial lt; ou e comercial gt;, tudo junto <br>
+        Aí dá para fazer as tags supracitadas aparecerem: "&lt;p&gt;", "&lt;/p&gt;" e "&lt;br&gt;" <br>
+        Sim, como você observou, a quebra de linha dada por &lt;br&gt;, diferentemente do parágrafo <br>
+        &lt;p&gt; não precisa de barra para fechar, basta usá-lo uma vez.
+    </p>
+    <p>             Ah! Outra coisa, o VS code não interpreta os espaços dados. Por exemplo, neste texto eu dei alguns espaços antes <br> de iniciá-lo, mas você vê/verá sem o espaço.</p> <!--Isto é um comentário, é assim que se faz um comentário em HTML-->
+    <!--lt = Less than e gt = Greater than-->
+    <p>Vamos adicionar alguns símbolos especiais.
+        <br>
+        &reg; -- MARCA REGISTRADA <br>
+        &copy; -- DIREITOS DE CÓPIA (COPYRIGHT) <br>
+        &trade; -- MARCA REGISTRADA EM INGLÊS <br>
+        &euro; -- EURO <br>
+        &cent; -- CENTAVO AMERICANO <br>
+        Enfim, há vários outros. Há uma tabela para fazer isto. Também é possível
+        pedir para o chatGPT fazê-lo.
+        Este é o texto que enviei <br>
+        ao chatGPT para testá-lo: "Neste texto, coloque marca registrada,
+        emoji de sorriso e nesta lista [] coloque outros três símbolos de HTML"
+        <br>
+        Eis a resposta: ""Neste texto, coloque marca registrada,
+        emoji de sorriso &#x1F604; e nesta lista [&#10004;, &#10006;, &#9733;]
+        coloque outros três símbolos de HTML"" <br>
+        Como se vê, ele é meio burro.
+        <br> Em caso de dúvidas, entre em "emojipedia.org". Ao selecionar um emoji, você pode selecionar o emoji. Mas aí, neste caso, é mais fácil
+        de fato pedir ao chatGPT para lhe dar o código. <br>
+        Só que há um detalhe! Para que o código funcione, você deve dizer ao interpretador que o código é hexadecimal. <br>
+        Para isso, escreva &#x CÓDIGOAQUI (mas não ponha espaço entre o determinador de hexadecimal e o código, aqui o fiz para não aparecer este símbolo: &#xC)
+    </p>
+    
+</body>
+</html>

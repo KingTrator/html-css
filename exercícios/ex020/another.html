@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /* The symbol ">" means "p" is a son of "div", which means he receives more personal alterations, but the div will not receive the same (when it's done here) */
+        display: none; /* Hidden it */
+        }
+
+        div:hover > p {
+            display: block; /* When you pass the mouse, it will show the hidden text */
+            background-color: red;
+            color: white;
+            width: 90px;
+
+        }
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover example</h1>
+    <p>Pass the mouse here</p>
+    <div> Also here
+        <p>Hidden text</p>
+    </div>
+    <p>End</p>
+</body>
+</html>

@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: "Personalizada";
+    src: url(fonte/idroid.otf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e7c2;
+    max-height: max-content;
+}
+
+/* Definindo variáveis globais com "*" */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Uma maneira mais inteligente de colocar as cores, fontes, etc, é a seguinte: 
+Defina a paleta de cores ou qualquer coisa de interesse: #3cd883, #288e55, #1a5c38)
+Então DEFINA VARIÁVEIS
+:root {
+    -- bg-plano-de-fundo: #3cd883
+    -- bg-títulos: #288e55
+    -- bg-corpo-do-texto: #1a5c38
+}
+":root" é uma pseudoclasse que todo documento tem. É o equivalente a criar variáveis globais em Python. O que vale dentro de root vale para todo o script.
+A seguir, ao declarar, por exemplo:
+h1 {
+    background-color: --bg-títulos; (em vez de colocar o código hexadecimal. Isso deixa o código mais organizado).
+}
+NOTA: Variáveis em CSS3 são declaradas assim "--nomedavariável" */
+
+header {
+    background-image: linear-gradient(#3cd883, #288e55, #1a5c38);
+    padding: 20px 50px 10px 10px;
+    box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.404);
+}
+
+nav > a {
+    padding: 10px 10px 10px;
+    color: white;  
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    min-width: 320px; /*Altura mínima de um celular específico padrão */
+    max-width: 800px; /*Valor máximo recomendado */
+    margin: auto; /* Ordena ao texto para centralizar na tela */
+    box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.404);
+    padding: 6px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-indent: 30px; /* Recuo para parágrafos */
+    line-height: 1.8em; /* Aumenta a distância entre as linhas. São detalhes que mudam a experiência do usuário */
+}
+
+main h2, h3 {
+    display: block;
+    margin-left: 5px; /* Por isso também pode haver vários h1 */
+}
+
+main a {
+    background-color: #c5ebd6;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: #3ad480;
+}
+
+div#descrição-curta {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.637);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2#colortitle {
+    color: #1c5e3a;
+}
+
+h2, h3 {
+    font-family: Personalizada;
+}
+
+.h3-bonito {
+    background-image: linear-gradient(to right, #c5ebd6 50%, #ffffff);
+    color: #1c5e3a;
+}
+
+img#Android {
+    width: 100%;
+}
+
+img#Ilustradora {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+img#Ilustradora-2 {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    
+}
+
+img#Android-Pessoa {
+    display: block; /*Uma img por padrão não é bloco e sem bloco não há margin */
+    margin: auto;
+}
+
+h2#h2final {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+    background-color: #2fa866;
+    padding: 8px;
+    margin: 5px 5px 0px 5px;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.h2final-conteúdo {
+    background-color: #c5ebd6;
+    margin: 0px 5px 0px 5px;
+    padding-top: 10px;
+
+}
+
+div.video {
+    background-color: #1a5c38;
+    margin: 0px -8px 30px -7px;
+    padding: 8px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > aside > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside#lista {
+    background-color: #c5ebd6;
+}
+
+aside#lista > ul {
+    list-style-position: inside; /* Põe as "bolinhas" p/ dentro do aside, por padrão é outside */
+    columns: 2; /* Divide a lista em duas colunas */
+    padding: 9px;
+}
+
+footer {
+    background-color: #1a5c38;
+    color: rgba(255, 255, 255, 0.658);
+    font-size: small;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+footer > strong {
+    font-weight: bolder;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: #c5ebd6;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #3ad480;
+}

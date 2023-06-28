@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #034159, #0cf25d);
+    min-height: 100vh;
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    /* Aqui você poderia ter usado margin: auto para adequar ao centro automaticamente */
+    box-shadow: 20px 20px 20px black; /* Cria uma sombra na caixa branca de texto, é um efeito visual bacana */
+}
+
+p {
+    text-align: justify;
+}
+
+h1, h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #034159;
+    text-shadow: 1px 1px 1px black; /*Também cria uma pequena sombra */
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+
+
+
+
+/* Sem querer corrigi um problema do código do Guanabra. Quando havíamos digitado height: 100%; dentro da variável global "*", naturalmente houve um desalinhamento dos textos, porque toda a estrutura do código foi afetada. Isso foi parcialmente corrigido quando colocamos "height" dentro de "body", pois "height" pasosu a afetar somente body. No entanto, o degradê ainda estava problemático. Ele era corretamente executado até uma porção da tela. No entanto, ao final, formava-se um retângulo, bastante visível, cuja única cor era a primeira cor do degradê, isto é, havia uma descontinuação. Por alguma razão, "padding" foi capaz de corrigir isso. Ao pôr em 120px essa "descontinuação" foi "jogada para fora" e apenas o degradê ficou visível. Será que isso poderia ser um problema em monitores com telas maiores? Será que uma gambiarra, como colocar um valor bem alto em padding dentro de body, poderia corrigir isso? 
+O chatGPT-3.5, fabuloso mentiroso, disse que essa é uma correçõa inadequada. Então adotei como código final aquele que está acima. Como ele ofereceu um display flex, display flexível, achei que a solução de fato fizesse mais sentido, se de fato agora o degradê passou a se acomodar para a tela do navegador e não conforme um valor pré-fixado.

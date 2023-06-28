@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags HTML5</title>
+    <style>
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.438);
+        }
+
+        nav {
+            background-color: rgb(66, 63, 63);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.438);
+
+            /* bow-shadow: deslocamento horizontal, vertical, espalhamento e cor da sombra. */
+            /* O dev tools permite criar box shadows de uma forma mais simples, mas realmente não consegui usá-lo por alguma razão. */
+        }
+
+        span#menu > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+
+        }
+        span#menu > a:hover {
+            background-color: red;
+            text-decoration: underline;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.438);
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 60px 0px 0px 0px
+            
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(177, 169, 169);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0;
+        }
+
+        span {
+            display: block;
+            background-color: rgb(66, 63, 63);
+            
+        }
+
+        span#menu {
+            margin: 0px auto 0px auto;
+        }
+        
+        div#ball {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%; /* The right porcentage to create a ball */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- It's possible to do what we're going to do with "<div>", but that would not bem semantic. We can be semantic as I'm going to show below.-->
+    <header> <!--That's a div (and what is coming), but for searching mecanisms, it makes clear that this is a header (cabeçalho)-->
+        <h1 style="text-align: center;">My website</h1>
+        <nav style="text-align: center;"> <!-- Ideal for menus where we put links-->
+            <span id="menu">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </span>
+        </nav>
+
+    </header>
+    <main> <!--Clarify that this is the main code with the main content.-->
+        <section id="topics">
+
+        </section>
+        <section id="news"> <!--Division of the the main tag-->
+            <article> <!--Some specific subject-->
+                <h2>News about Trator's Imperium</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero aliquid dolorem ab debitis, porro sequi sed officiis, optio nemo quae rem in? Voluptatum quos accusantium totam quae eveniet illum autem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, repudiandae sed voluptatum odio nam vero illo sunt explicabo numquam molestias, nesciunt delectus incidunt animi autem est alias quisquam dolorem dolor. Vivax Trátor!</p>
+                <aside> <!-- Related to the article, but aside the main content.-->
+                    <p>
+                        This article was writted by Mr. Sucuri
+                    </p>
+
+                </aside>
+<!--You can put section inside an article without any problem.-->
+            </article>
+                <h2>Bussiness</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum, nostrum ratione debitis doloribus veritatis quis tempora explicabo ad, voluptate reprehenderit cupiditate ea accusantium, iusto optio! Expedita itaque suscipit voluptatibus!</p>
+            <article>
+                <p>Ms. Bisset did not wanted to talk to us</p>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Developed by KingTrator</p>
+    </footer>
+    <!--SUMMARY: we could make it all with <div> but it wouldn't be as great as this for searching mechanisms.-->
+    <div id="ball"></div>
+</body>
+</html>
