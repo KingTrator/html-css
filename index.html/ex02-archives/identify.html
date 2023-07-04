@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header><h1>Identidade</h1></header>
+    <section>
+        <div id="form">
+            <p>Ano de nascimento:
+                <input type="number" name="year" id="year" min="1900">
+            </p>
+           <p>Sexo: 
+                <input type="radio" name="radg" id="male" checked>
+                <label for="male">Masculino</label>
+                <input type="radio" name="radg" id="female">
+                <label for="female">Feminino</label>
+           </p>
+           <p>
+            <input type="button" value="Enviar" onclick="verify()">
+           </p>
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <script src="javascript.js"></script>
+</body>
+</html>

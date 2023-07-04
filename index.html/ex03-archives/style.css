@@ -1,0 +1,92 @@
+@charset "UTF-8"; 
+
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #3c82d2;
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+section#section {
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px; /* A ordem das batatas importa. Se você colocar margin-top antes de margin auto, margin-top é redefinida */
+    /* OBS, vh = viewport height e vw = viewport-width, neste caso, vh é mais apropriado */
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 100px rgba(0, 0, 0, 0.507);
+}
+
+div#primeira {
+    padding-top: 20px;
+    font-size: 2em;
+    margin-left: 18px;
+    line-height: 50px;
+}
+
+input {
+    width: 40px;
+}
+
+input#first {
+    margin-left: 3px;
+}
+
+input#end {
+    margin-left: 25px;
+}
+
+input#step {
+    margin-left: 5px;
+}
+
+div#segunda {
+    font-size: 2em;
+    margin-left: 18px;
+}
+
+input#button {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+div#answer {
+    background-color: #32547cef;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    font-weight: bolder;
+}
+
+footer > a:hover {
+    background-color: rgba(255, 255, 255, 0.445);
+    padding: 3px;
+    font-size: 1.3em;
+}

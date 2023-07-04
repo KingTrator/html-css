@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+}
+
+#body {
+    background-color: #3b7fcf;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+    padding-top: 18px;
+}
+
+div {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+div#res > img {
+    height: auto;
+    width: 250px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+p#end {
+    font-size: 0.8em;
+    color: rgba(219, 23, 23, 0.397);
+    font-weight: bolder;
+    background-color: rgba(91, 91, 238, 0.377);
+}
+p {
+    margin: 9px;
+    color: black;
+}
+
+
+/* RESUMO CSS sobre o exercício:
+Eu posso deixar coisas prontas aqui no CSS para quando o Javascript agir. Por exemplo, a tag p#end já estava definida antes mesmo de ela existir (ser criada pelo Js em dado contexto de interação do usuário). Isso facilita bastante as coisas. Assim, apenas quando o Js cria uma tag p de id="end" é que ela entra em ação.
+Além disso, IMPORTANTE:
+Quando eu faço uma cor mudar por meio de Js, essa será a cor padrão no meu documento. Por isso, é necessário colocar uma
+cor fixa para todas as tags de interesse, porque se por ventura eu mudar isso em Js, vai dar treta. É por essa razão
+que eu explciitamente defini a cor de "p" como black.
+Porque no Js eu trocava, para algumas mensagens, para "red".
+O problema é que depois de trocar, "red" passava a ser o padrão de todos os outros "p" que apareciam".
+Eu resolvi isso explicitando que "p" é black, exceto se o Js
+sobrepor essa imposição explicitamente. */
