@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing bg image size</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url(images/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Img bg test</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde reiciendis maxime temporibus qui nesciunt quaerat ipsam omnis quae error id, porro, ab maiores esse ad. Adipisci exercitationem amet suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ut itaque quaerat perspiciatis obcaecati ipsa neque vero in ipsam cumque aliquid vitae harum quasi, nihil doloremque? Molestias possimus consequuntur reprehenderit.</p>
+    </main>
+    
+</body>
+</html>
+
+<!--NOVIDADES:
+1. Para fazer a imagem preenche completamente o fundo, deve-se combinar o height do body para 100vh (100% do view-height) e o background-size deve ser 100% (height e width). 
+1.1 IMPORTANTE: Isso provavelmente vai gerar uma imagem distorcida, por isso não é uma boa solução.
+2. Contain: Faz a imagem ser 100% exibição, ainda que para isso a imagem não cubra todo o body - o que exibirá o bg-color
+3. Cover: Faz a imagem caber 100% no body (ou container em que ela estiver), ainda que para isso precise picotar pedaços dela para fazê-la caber sem deformar. -->
