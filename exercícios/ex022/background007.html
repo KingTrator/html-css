@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changing bg image size</title>
+    <title>Adjusts to ex022/bgimg006</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image: url(images/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+            background: black url(images/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            width: 300px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -38,9 +35,14 @@
 </body>
 </html>
 
-<!--NOVIDADES:
-1. Para fazer a imagem preenche completamente o fundo, deve-se combinar o height do body para 100vh (100% do view-height) e o background-size deve ser 100% (height e width). 
-1.1 IMPORTANTE: Isso provavelmente vai gerar uma imagem distorcida, por isso não é uma boa solução.
-2. Contain: Faz a imagem ser 100% exibição, ainda que para isso a imagem não cubra todo o body - o que exibirá o bg-color
-3. Cover: Faz a imagem caber 100% no body (ou container em que ela estiver), ainda que para isso precise picotar pedaços dela para fazê-la caber sem deformar.
-4. Problema que ficou a ser resolvido: se o conteúdo a ser exibido for maior que a imagem, ainda haverá uma rolagem que irá expor o bg-color, pois o bg-img não está posto como fixo, mas isso será corrigido no próximo exercício.-->
+<!--NOVIDADES
+1. background-attachment: fixed;
+Essa propriedade permite fixar o plano de fundo de modo a não criar rolagem, como acontecia no exercício bg006. Na verdade, eu já conhecia essa propriedade.
+1.1 Em um exercício do módulo 1 do curso de HTML5 e CSS3 do CeV o Guanabara não corrigiu um problema de rolagem do background-image: linear-gradient(to bottom, cores-aqui), justamente porque não havia nos apresentado essa propriedade.
+Curioso, pedi ajuda ao ChaGPT para resolver. Então, na verdade, já conhecia a propriedade, mas agora entendo o porquê de ela funcionar.
+2. Shorthand:
+2.1 Há um poderoso shorthand para o background, que está passado errado aqui (logo explico):
+1º color - 2º image - 3º position - 4º repeat - 5º size* - 6º attachment
+2.2 * OBS sobre o  "size": O Guanabara disse que havia um problema à época (dois anos atrás) e que permanece até hoje (2023): embora a regra (da W3C) diga que o "bg-size" possa ser usado na shorthand, na prática, ele não funciona.
+Por isso, a verdadeira shorhand é:
+color - image - position - repeat - attachment-->
