@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background image test</title>
+    <style>
+
+        body {
+            background-image: url(images/wallpaper001.jpg);
+        }
+
+        div.square {
+            display: inline-block;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+
+        div#s1 {
+            background-color: skyblue;
+        }
+
+        div#s2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#s3{
+            background-image: url('images/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="square" id="s1"></div>
+    <div class="square" id="s2"></div>
+    <div class="square" id="s3"></div>
+</body>
+</html>
+
+<!-- NOVIDADES:
+1. Em background-image, use a função url() para colocar imagens de fundo.
+2. A imagem por padrão vem em seu tamanho total, mas poderá ser replicada caso o tamanho dela não corresponda ao tamanho de exibição da tela ou não ser totalmente exibida se for maior que a área de exibição.-->

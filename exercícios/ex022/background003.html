@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg position</title>
+    <style>
+
+        *{
+            font-size: 32px;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        div.block {
+            height: 150px;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 10px;
+            background-image: url("images/wallpaper003.jpg");
+        }
+
+        div#q1 {
+            background-position: left top;
+        }
+        
+        div#q2 {
+            background-position: left center;
+        }
+
+        div#q3 {
+            background-position: right bottom;
+        }
+
+        div#q4 {
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="block" id="q1">
+        left top poistion
+    </div>
+    <div class="block" id="q2">
+        left center position
+    </div>
+    <div class="block" id="q3">
+        right bottom position
+    </div>
+    <div class="block" id="q4">
+        center center position
+    </div>
+    
+</body>
+</html>
+
+<!--NOVIDADES:
+1. Por padrão, os planos de fundo passam a ser exibidos a partir do canto superior esquerdo.
+2. Por meio de background position, é possível alterar esse padrão para exibir as partes de interesse.-->
