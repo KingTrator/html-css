@@ -1,0 +1,79 @@
+@charset "UTF-8"; 
+
+@font-face {
+    font-family: 'Passion';
+    src: url(fontes/title/PassionOne-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'PassionRegular';
+    src: url('fontes/title/PassionOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'poetry';
+    src: url(fontes/texto/Sriracha-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: 'Passion', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+header > p {
+    font-family: 'PassionRegular', 'sans-serif';
+    padding: 9px;
+    font-size: 0.9em;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+main {
+    margin: auto;
+    width: fit-content;
+}
+
+.div {
+    width: 600px;
+    height: 400px;
+    line-height: 1.5em;
+    font-family: 'poetry', 'san-serif';
+    font-size: 1.5em;
+    padding-top: 18px;
+    padding-left: 18px;
+}
+
+div#div02 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+}
+
+div#div04 {
+    background-image: url(imagens/background002.jpg);
+}
+
+
+
+
+/* Tamnho das imagens: 
+1. Joaninha: 1920 x 1280
+2. Outra: 1920 x 1175 
+*/
