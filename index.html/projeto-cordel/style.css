@@ -1,0 +1,111 @@
+@charset "UTF-8"; 
+
+@font-face {
+    font-family: 'Passion';
+    src: url(fontes/title/PassionOne-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'PassionRegular';
+    src: url('fontes/title/PassionOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'poetry';
+    src: url(fontes/texto/Sriracha-Regular.ttf);
+}
+
+:root {
+    --font-texto: 'PassionRegular';
+    --font-título: 'Passion';
+    --font-outros: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /* Isso ou 100% */
+    background-color: darkgray;
+    font-family: var(--font-outros);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font-título);
+    font-size: 10vw; /* Não é a melhor maneira de adaptar a letra, mas é uma forma de resolver o problema sem media query */
+}
+
+header > p {
+    font-family: 'PassionRegular', 'sans-serif';
+    padding-bottom: 50px;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font-texto);
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(102, 88, 88, 0.945);
+    color: white;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url(../primeira-tentativa/imagens/background001.jpg); /* Fiz isso só pra relembrar do ../ */
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+section.imagem > p {
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+footer > a:hover, header > p > a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+
+
+
+/* NOVIDADES:
+1. text-transfrom: uppercase (joga todas as letras para maiúsculas)
+2. font-variant: small-caps (joga todas para maiúsculas, mas as iniciais são um pouco maiores).
+Assim como o Guanabara, acho que o efeito de 2 > 1. 
