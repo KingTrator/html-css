@@ -1,2 +1,111 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Textual';
+    src: url('../fontes/MysteryQuest-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Título';
+    src: url('../fontes/Eater-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'link';
+    src: url('../fontes/MysteryQuest-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+}
+/* Vou adicionar um Js para "ligar/desligar" a claridade na página */
+:root {
+    /* Cores */
+    --header: #2c4146;
+    --bg: #2c4146;
+    --cor01: #402617;
+    --cor02: #4a1f0e;
+    --cor03: #230102;
+    --cor04: #020001;
+    /* Fontes de texto */
+    --title: 'Título';
+    --texto: 'Textual';
+    --link: 'Link'
+}
+
+body {
+    background: var(--bg);
+    height: fit-content;
+}
+
+article {
+    font-family: var(--texto);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--link);
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.377);
+    text-decoration: underline;
+    padding: 2px;
+}
+
+header {
+    background-color: var(--header);
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-family: var(--title);
+}
+
+header > h1 {
+    font-variant: small-caps;
+}
+
+header > p > span {
+    color: rgba(255, 255, 255, 0.438);
+    font-family: var(--link);
+}
+
+input[type="button"] {
+    display: block;
+    background: #5c8892;
+    font: inherit;
+    text-align: left;
+}
+
+article {
+    height: fit-content;
+    text-indent: 18px;
+    line-height: 1.8em;
+    background-color: #948b8b;
+}
+
+div.div {
+    background-color: rgb(148, 139, 139);
+}
+
+article > div.div > p {
+    width: 300px;
+}
+
+div#barata {
+    background: url('../imagens/barata.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left center;
+}
+
+div#normal {
+    
+}
+
+footer {
+    text-align: center;
+}
