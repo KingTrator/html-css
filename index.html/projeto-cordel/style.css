@@ -81,7 +81,7 @@ section.imagem {
 }
 
 section#img01 {
-    background-image: url(../primeira-tentativa/imagens/background001.jpg); /* Fiz isso só pra relembrar do ../ */
+    background-image: url(imagens/background001.jpg); /* Fiz isso só pra relembrar do ../ */
     background-position: right center;
 }
 
