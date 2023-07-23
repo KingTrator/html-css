@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Clique no botão "Download" para iniciar um download fictício:</p>
+
+<button onclick="startDownload()" id="button">Download</button>
+
+<div id="myProgress" style="width: 100%; background-color: #ddd;">
+  <div id="myBar" style="width: 1%; height: 30px; background-color: #4caf50;"></div>
+</div>
+
+<p class="status">Ready to download</p>
+
+<script>
+function startDownload() {
+  var elem = document.getElementById("myBar");
+  var status = document.getElementsByClassName("status")[0];
+  status.innerHTML = "Downloading";
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      status.innerHTML = "Download complete!";
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
