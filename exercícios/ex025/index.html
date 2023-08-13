@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando colunas com colgorup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+
+        col.cnome {
+            background-color: white;
+        }
+        col.cnaoprecisaseronomeexato {
+            background-color: beige;
+        }
+        col.enaordememqueascolunasaparecerem {
+            background: red;
+        }
+        .amarelo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> <!-- Tag da HTML5 que permite selecionar várias colunas por vez.-->
+            <col class="amarelo">
+            <col class="cnaoprecisaseronomeexato">
+            <col class="enaordememqueascolunasaparecerem" span="2"> <!-- Com span 2, posso mandar que se aplique uma expansão para duas colunas-->
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>19</td>
+                <td>Repórter</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Cozinheira</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Programadora</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>M</td>
+                <td>37</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>M</td>
+                <td>69</td>
+                <td>Aposentado</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>M</td>
+                <td>17</td>
+                <td>Estudante</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
