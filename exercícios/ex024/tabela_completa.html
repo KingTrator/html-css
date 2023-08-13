@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela_completa</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td {
+            border: 1px solid black;
+        }
+        th {
+            text-align: center;
+            border: 1px solid black;
+
+        }
+        caption {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Filmes prediletos de indivíduos masculino ou femino em ordem crescente de preferência
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Sexo</th>
+                <th scope="scol">Nome</th>
+                <th colspan="3" scope="colgroup">Filme</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Feminino</th>
+                <td>Angela Borges</td>
+                <td>Filme A</td>
+                <td>Filme C</td>
+                <td>Filme D</td>
+
+            </tr>
+            <tr>
+                <td>Eunice Blitz</td>         
+                  <td>Filme B</td>
+                  <td>Filme A</td>
+                  <td>Filme C</td>
+             </tr>
+             <tr>
+                <th rowspan="4" scope="rowgroup">Masculino</th>
+                <td>João Santos</td>
+                <td>Filme A</td>
+                <td>Filme B</td>
+                <td>Filme D</td>
+             </tr>
+             <tr>
+                <td>Pedro Fritz</td>
+                <td>Filme X</td>
+                <td>Filme B</td>
+                <td>Filme E</td>
+             </tr>
+             <tr>
+                <td>Cassandro Ron</td>
+                <td>Filme D</td>
+                <td>Filme F</td>
+                <td>Filme E</td>
+             </tr>
+             <tr>
+                <td>Octavio Maximus</td>
+                <td>Filme M</td>
+                <td>Filme A</td>
+                <td>Filme X</td>
+             </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+<!--
+    Notas:
+    "rowgroup" é usado para quando, por exemplo, um elemento mescla duas linhas e se refere às duas linhas que estão conectadas a essa "linha maior". Por isso para femino/masuclino demos rowgroup.
+    Já "colgroup", no caso de filmes, é porque para filmes temos colunas que fazem referência a filmes.
+-->

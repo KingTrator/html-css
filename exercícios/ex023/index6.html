@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+        }
+        header > h1{
+            text-align: center;
+        }
+        table{
+            width: 300px;
+            height: 50px;
+            margin: auto;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+            /* A pseudoclasse :nth-child permite definir o efeito "zebrado" quando o valor do atributo for "2n".*/
+            /*A fórmula padrão do ":nth-child()" é an + b, então você pode criar combinações, como 2n - 1, etc.*/
+            /* Há opções padrão, como "odd" = 2n - 1 para ímpar e "even" = 2n" */
+        }
+        tbody > tr:nth-child(2n - 1) {
+            background-color: white;
+        }
+
+        caption{
+            font-size: 14px;
+            font-weight: 200;
+            padding: 8px;
+            background-color: beige;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+            border: 1px solid black;
+        }
+
+        th > span {
+            font-size: 12px;
+            font-style: italic;
+            vertical-align: bottom;
+        }
+
+        td, th {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* Você pode compartilhar características, como feito para "td, th" */
+
+        td {
+            border: 1px solid black;
+            padding-left: 3px;
+
+        }
+
+        td.numero{
+            text-align: right;
+        }
+
+        td.numero#soma{
+            color: rgb(0, 255, 55);
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha primeira tabela GRANDE</h1>
+    </header>
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População <span>(em milhão)</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>São Paulo</td>
+                <td class="numero">44,04</td></tr>
+            <tr><td>Minas Gerais</td>
+                <td class="numero">21,16</td></tr>
+            <tr><td>Rio de Janeiro</td><td class="numero">17,26</td></tr>
+            <tr><td>Bahia</td><td class="numero">14,93</td></tr>
+            <tr><td>Rio Grande do Sul</td><td class="numero">11,37</td></tr>
+            <tr><td>Paraná</td><td class="numero">11,43</td></tr>
+            <tr><td>Pernambuco</td><td class="numero">9,62</td></tr>
+            <tr><td>Ceará</td><td class="numero">9,13</td></tr>
+            <tr><td>Pará</td><td class="numero">8,69</td></tr>
+            <tr><td>Maranhão</td><td class="numero">7,11</td></tr>
+            <tr><td>Santa Catarina</td><td class="numero">7,16</td></tr>
+            <tr><td>Goiás</td><td class="numero">7,02</td></tr>
+            <tr><td>Paraíba</td><td class="numero">4,02</td></tr>
+            <tr><td>Amazonas</td><td class="numero">4,08</td></tr>
+            <tr><td>Distrito Federal</td><td class="numero">3,05</td></tr>
+            <tr><td>Alagoas</td><td class="numero">3,34</td></tr>
+            <tr><td>Piauí</td><td class="numero">3,28</td></tr>
+            <tr><td>Mato Grosso</td><td class="numero">3,51</td></tr>
+            <tr><td>Sergipe</td><td class="numero">2,31</td></tr>
+            <tr><td>Rondônia</td><td class="numero">1,78</td></tr>
+            <tr><td>Tocantins</td><td class="numero">1,58</td></tr>
+            <tr><td>Acre</td><td class="numero">0,89</td></tr>
+            <tr><td>Amapá</td><td class="numero">0,86</td></tr>
+            <tr><td>Roraima</td><td class="numero">0,63</td></tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="numero" id="soma">211,75</td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consequuntur dolorum, praesentium magnam maxime quisquam, facilis accusamus voluptatibus quia perferendis assumenda quibusdam voluptates reprehenderit quod, laboriosam ad quidem blanditiis excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum ipsa sunt at excepturi, sequi sit ratione adipisci. Recusandae, sit aliquid! At animi itaque ipsam aspernatur ipsum repudiandae dicta consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint quibusdam tempora? Nisi quas, ab a, quod, delectus non sapiente ex ea eos vitae quis est exercitationem magnam quos dicta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consequuntur dolorum, praesentium magnam maxime quisquam, facilis accusamus voluptatibus quia perferendis assumenda quibusdam voluptates reprehenderit quod, laboriosam ad quidem blanditiis excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum ipsa sunt at excepturi, sequi sit ratione adipisci. Recusandae, sit aliquid! At animi itaque ipsam aspernatur ipsum repudiandae dicta consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint quibusdam tempora? Nisi quas, ab a, quod, delectus non sapiente ex ea eos vitae quis est exercitationem magnam quos dicta? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consequuntur dolorum, praesentium magnam maxime quisquam, facilis accusamus voluptatibus quia perferendis assumenda quibusdam voluptates reprehenderit quod, laboriosam ad quidem blanditiis excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum ipsa sunt at excepturi, sequi sit ratione adipisci. Recusandae, sit aliquid! At animi itaque ipsam aspernatur ipsum repudiandae dicta consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint quibusdam tempora? Nisi quas, ab a, quod, delectus non sapiente ex ea eos vitae quis est exercitationem magnam quos dicta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consequuntur dolorum, praesentium magnam maxime quisquam, facilis accusamus voluptatibus quia perferendis assumenda quibusdam voluptates reprehenderit quod, laboriosam ad quidem blanditiis excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum ipsa sunt at excepturi, sequi sit ratione adipisci. Recusandae, sit aliquid! At animi itaque ipsam aspernatur ipsum repudiandae dicta consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint quibusdam tempora? Nisi quas, ab a, quod, delectus non sapiente ex ea eos vitae quis est exercitationem magnam quos dicta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consequuntur dolorum, praesentium magnam maxime quisquam, facilis accusamus voluptatibus quia perferendis assumenda quibusdam voluptates reprehenderit quod, laboriosam ad quidem blanditiis excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum ipsa sunt at excepturi, sequi sit ratione adipisci. Recusandae, sit aliquid! At animi itaque ipsam aspernatur ipsum repudiandae dicta consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint quibusdam tempora? Nisi quas, ab a, quod, delectus non sapiente ex ea eos vitae quis est exercitationem magnam quos dicta?</p>
+</body>
+</html>
+
+<!--
+    O recuro de cabeçalho fixo pode não estar disponível em todos os navegadores.
+    Para concretizá-lo, você deverá pôr a tabela (tag <table>) em posição relativa.
+    Por outro lado, os elementos do cabeçalho, neste exercício, thead > tr > th, devem ser colocados em posição "sticky" (colada).
+    Por fim, você deve definir o atributo "Top" em algum valor. No Chrome, "-1px" garante que a rolagem fique boa, assim como no Edge.
+    Quando a tabela termina, a rolagem junto da tela também se encerra, pois você definiu a posição "relative" + "sticky" apenas para <table>.
+    O valor de "top" se refere à posição em que o cabeçalho estará fixado durante a rolagem. Top é um atributo que faz referência à posição do contêiner mais próximo do elemento em questão.
+    OBS: O ChatGPT-4 diz que o "position: relative" dado na <table> não é relevante para o efeito criado.
+    E de fato não é, mas o mantive porque o exercício foi desenvolvido assim.
+    Aparentemente, o que ocorre é o seguinte: a posição: static (padrão) não permite a aplicação do efeito de rolagem.
+    A aplicação de position:sticky para elementos do cabeçalhos (como <tr>) o torna grudado ao contêiner mais próximo. Então, pode-se usar "top". Deve-se definir o valor de top para dizer a posição, depois de ultrapassado o tamanho do conteiner no padrão "static", a partir da qual o elemento deixad e ser "static" para se tornar "sticky". No caso, -1px foi necessário.
+-->

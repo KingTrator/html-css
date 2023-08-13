@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse; /* O padrão é separate */
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+        }
+        tr.amarelo{
+            background-color: beige;
+        }
+        td#pequeno{
+            font-size: 8px;
+            font-style: oblique;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+        <!--
+            HIERARQUIA DE TABELAS (simples)
+            TABLE = tabela
+                TABLE ROW = linha de tabela
+                    TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dado de tabela
+        -->
+        <table>
+            <tr class="amarelo"> <!--Primeira linha-->
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr> <!--Segunda linha-->
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr class="amarelo"><!--Terceira linha-->
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr> <!--Quarta linha, linha estilística-->
+                <td id="pequeno">Item solto</td>
+            </tr>
+        </table>
+        <!--
+            tr = Linha
+            td = Célula (localizada, matricialmente, A(ixj) )
+        -->
+</body>
+</html>
+
+<!-- RESUMO:
+1. Hierarquia na tabela: Tabela > Linha > Dado == Cabeçalho
+2. Border-collapse: A propriedade "border" é o que usamos para dar à tabela a cara de tabela. Com border-collapse definimos a distância entre a borda. "Collapse" é o "padrão" das tabelas que conhecemos, como as do Excel. "Separate" é o padrão CSS.
+OBS: O fechamento da tag "td", segundo a W3C, não é obrigatório, o código continuará a funcionar mesmo assim.
+-->

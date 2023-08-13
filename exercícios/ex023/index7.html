@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #table1{
+            width: 300px;
+            height: 80px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        caption {
+            margin-top: 30px;
+        }
+
+        #table2{
+            width: 200px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table id="table1">
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <table id="table2">
+        <caption>
+            Quadro de Punnet
+        </caption>
+        <tr>
+            <td style="width: 20px;"></td>
+            <td colspan="2" style="font-weight: bolder;">Aa</td>
+        </tr>
+        <tr>
+            <td style="height: 160px; font-weight: bolder;" rowspan="2">aa</td>
+            <td>Aa</td>
+            <td>Aa</td>
+        </tr>
+        <tr>
+            <td>aa</td>
+            <td>aa</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!--
+    RESUMO:
+    O atributo "colspan=n" permite expandir uma coluna para outras. Por exemplo, "colspan=2" faz com que uma coluna ocupe o espaço de duas - dada a estrutura da tabela.
+    Por outro lado, a propriedade "rowspan=n" permite que uma dada célula se expanda para um certo número de linhas.
+-->
